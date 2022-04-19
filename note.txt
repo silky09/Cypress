@@ -1,0 +1,62 @@
+features:
+1. Cypress takes SS as your tests run.
+2. after execution, you can see all SS/videos in command log
+3. it has debugging features
+4. it has automatic wait features (no need to add additional wait)
+5. it interacts with browser directly (does not use webdriver). so it is fast, consistent and reliable.
+6. it has cross browser testing supports.
+7. it is used to write all types of tests:
+--> End-to-End tests
+--> Integration tests
+--> Unit tests
+
+Prerequisite - Setting up Cypress environment:
+--> node -v
+--> npm -v   (node package manager)
+pip : package installer for Python
+
+Project Setup:
+1. install Node.js
+2. install VS code
+3. in vscode terminal, run command npm init -y
+4. install cypress within local folder/Project to access easily
+--> npm install cypress (incase not installed then use: npm install cypress@latest version number)
+--> npx cypress -v
+npx is used to run npm command in the local folder.
+5. to open cypress: use command: npx cypress open
+
+To write test: steps :
+6. /// <reference types = "cypress" />
+we use this because we telling the program to allow autocompletion 
+in this script/ file from the 
+cypress library or cypress node package so it becomes very handy and useful.
+
+##. to write a test, we need a test runner - mocha
+mocha comes inbuild with cypress.
+(you do not need to install other test runner)
+
+7. write test function: use "it" function/block
+
+it("name of the test", function(){
+   type cypress comands... 
+   cy.visit('link of the website')
+})
+
+8. then run test using : npx cypress open
+9. to terminate the program use: ctrl c
+
+## to run the test on every changes write:
+"watchForFileChanges":false 
+in cypress.json file.
+("watchForFileChanges":true) is set to bydefault.
+
+10. to Access the elements: locators
+#L2AGLb > .QS5gu
+---> # means id
+---> . means class
+
+11. Access elements with text (instead of putting locators): 
+cy.contains('All news about Sweden | Euronews').click()
+
+12.
+
