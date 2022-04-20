@@ -65,3 +65,4 @@ cy.contains('All news about Sweden | Euronews').click()
 
 12. if you use "only" property to a TC it means it will run those specific TC only.
 
+13. add  {timeout: 6000} The first period waits for a matching request
