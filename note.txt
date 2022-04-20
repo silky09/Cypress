@@ -63,5 +63,5 @@ in cypress.json file.
 11. Access elements with text (instead of putting locators): 
 cy.contains('All news about Sweden | Euronews').click()
 
-12.
+12. if you use "only" property to a TC it means it will run those specific TC only.
 
