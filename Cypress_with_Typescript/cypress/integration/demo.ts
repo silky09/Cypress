@@ -1,21 +1,21 @@
 /// <reference types = 'cypress' />
 
 
-it('cypress test', () => {
+it.only('cypress test', () => {
     cy.visit('https://example.cypress.io/')
     cy.wait(1000)
-    cy.contains('get').click()
+    cy.contains('get', {timeout: 6000}).click()
     
 
 })
 
 
-it.only('google_test', function(){
+it('google_test', function(){
    cy.visit('https://www.google.com/') 
    // to accept CookieConsent
    cy.get('#L2AGLb > .QS5gu').click()
    //cy.get('.gLFyf')
-   cy.get('[name="q"]', {timeout: 6000})
+   cy.get('[name="q"]')
         .type("Staffanstorp kommun {enter}")
    cy.contains('Staffanstorps kommun: Startsida')
         .click()
