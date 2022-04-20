@@ -23,6 +23,10 @@ Project Setup:
 4. install cypress within local folder/Project to access easily
 --> npm install cypress (incase not installed then use: npm install cypress@latest version number)
 --> npx cypress -v
+------>  (if required to install typescript use: npm install typescript)
+then run this command to ensure that types for cypress are accessible by typescript. these types depends on dom and es6 so we pass them as lib option to typescript.
+npx tsc --init --types cypress --lib dom,es6
+
 npx is used to run npm command in the local folder.
 5. to open cypress: use command: npx cypress open
 
