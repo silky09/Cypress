@@ -18,7 +18,8 @@ pip : package installer for Python
 Project Setup:
 1. install Node.js
 2. install VS code
-3. in vscode terminal, run command npm init -y
+
+3. in vscode terminal, first run command npm init -y (y means yes)
 4. install cypress within local folder/Project to access easily
 --> npm install cypress (incase not installed then use: npm install cypress@latest version number)
 --> npx cypress -v
