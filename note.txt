@@ -74,4 +74,8 @@ it('Take a Screenshot', () => {
        cy.screenshot()
  })
 
- 15. 
+ 15. for running specific file:
+
+ npx cypress run  --spec "cypress/integration/login_Test.js" 
+
+ 16. 
