@@ -38,7 +38,12 @@ describe('Cure Make Appointment', () => {
         cy.get('.text-center > .btn').click()
     })
 
-   
+
+
+//    it('Take a Video', () => {
+//     cy.video()
+// })
+
 
 })
 
