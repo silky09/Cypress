@@ -67,3 +67,11 @@ cy.contains('All news about Sweden | Euronews').click()
 
 13. add  {timeout: 6000} The first period waits for a matching request then run the code.
 // default timeout is 4 secs
+
+14. for taking screenshot:
+
+it('Take a Screenshot', () => {
+       cy.screenshot()
+ })
+
+ 15. 
