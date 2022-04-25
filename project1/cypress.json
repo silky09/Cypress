@@ -1,6 +1,13 @@
 {
     "watchForFileChanges":true,
     "chromeWebSecurity": false,
-    "defaultCommandTimeout": 10000
-    
+     "defaultCommandTimeout": 1000,
+    "screenshotOnRunFailure" : true,
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+        "reportDir": "cypress/report",
+        "charts": true,
+        "reportPageTitle": "Silky Demo report",
+        "embeddedScreenshots": true
+      }
 }
