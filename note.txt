@@ -19,7 +19,8 @@ Project Setup:
 1. install Node.js
 2. install VS code
 
-3. in vscode terminal, first run command npm init -y (y means yes)
+3. in vscode terminal, first run command 
+---> npm init -y (y means yes)
 4. install cypress within local folder/Project to access easily
 --> npm install cypress (incase not installed then use: npm install cypress@latest version number)
 --> npx cypress -v
@@ -29,6 +30,7 @@ npx tsc --init --types cypress --lib dom,es6
 
 npx is used to run npm command in the local folder.
 5. to open cypress: use command: npx cypress open
+(after that cypress folder will be seen in the side bar)
 
 To write test: steps :
 6. /// <reference types = "cypress" />
@@ -78,4 +80,5 @@ it('Take a Screenshot', () => {
 
  npx cypress run  --spec "cypress/integration/login_Test.js" 
 
- 16. 
+ 16. click({force: true}) means click forsefully.
+ 
