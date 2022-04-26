@@ -47,7 +47,7 @@ describe('Locating end to end Elements', () => {
 
     });
 
-    it('Billing address', () => {
+    it('Billing address will be added later', () => {
        //  Billing address will be added later
         
         
