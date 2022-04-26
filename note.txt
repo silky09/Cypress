@@ -50,6 +50,9 @@ it("name of the test", function(){
 })
 
 8. then run test using : npx cypress open
+or
+node_modules/.bin/cypress open
+
 9. to terminate the program use: ctrl c
 
 ## to run the test on every changes write:
@@ -78,7 +81,22 @@ it('Take a Screenshot', () => {
 
  15. for running specific file:
 
- npx cypress run  --spec "cypress/integration/login_Test.js" 
+ -----> npx cypress run  --spec "cypress/integration/login_Test.js" 
+------> npx cypress run -- spec "project2/cypress/integration/eCommerce_demoTest.js"    
+(copy relative path of the file)  
 
  16. click({force: true}) means click forsefully.
  
+ 17.  Run Cypress Tests in Test Runner & Terminal :
+ >>>> npx cypress open (to open test runner)
+ >>>> npx cypress run (to run all the tests under integration folder in headless mode)
+>>>> npx cypress run --headed (with --headed parameters we can see the execution or ui in the browser.)
+ 
+ 18. headless means all TCs are executed in the backend.
+ so we can not see any UI. 
+
+ 19. to run all the tests under integration folder using Chrome:
+
+ npx cypress run --browser chrome
+
+npx cypress run --headed --browser chrome
