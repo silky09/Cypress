@@ -100,3 +100,9 @@ it('Take a Screenshot', () => {
  npx cypress run --browser chrome
 
 npx cypress run --headed --browser chrome
+
+20. Scroll the window 500px down 
+
+cy.scrollTo(0, 500) 
+
+21. 
