@@ -112,4 +112,44 @@ cy.scrollTo(0, 500)
      Your subject contained 13 elements. Pass { multiple: true } if you want to 
     serially click each element
 
-22. 
+22. Handling alert:
+
+>> cypress by default take care of (close ) alert window.
+>> it close the window without doing any manual action.
+>>  we donot need to use any tool, or write any additional code/script for closing alert box.
+
+>>>>>  but sometime, if you want to varify or validate something like messages in alert window, then
+you have to write some piece of code.
+(to create an event)
+
+1. window:alert (OK button on the alert gets clicked automatically)
+----------------
+ cy.on('window:alert',(str)=>{
+         //assertions
+ expect(t).to.contains('Your full name');
+ })
+
+----> (window:alert) event will capture the message to the particular variable (str)
+----> str is a variable
+
+2. window:confirm (The following confirmation pop-up with "OK" and "Cancel" buttons getting displayed.)
+------------------
+cy.on("window:confirm", (t) => {
+         //verify text on pop-up
+         expect(t).to.equal("message expecting");
+      });
+
+**** Implementation Cancel click:
+
+after visit url script, place this code:
+
+cy.on("window:confirm", (s) => {
+         return false;
+      });
+
+then write get and click commands.
+next script will be for verify Cancel click.
+
+// verify application message on Cancel button click
+      cy.get('#result').should('have.text', 'You clicked: Cancel')
+   });
