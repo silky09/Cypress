@@ -105,4 +105,11 @@ npx cypress run --headed --browser chrome
 
 cy.scrollTo(0, 500) 
 
-21. 
+21. {forse : true}
+    click('bottomLeft', { multiple: true })
+
+    /// cy.click() can only be called on a single element.
+     Your subject contained 13 elements. Pass { multiple: true } if you want to 
+    serially click each element
+
+22. 
