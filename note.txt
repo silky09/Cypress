@@ -156,3 +156,28 @@ next script will be for verify Cancel click.
 // verify application message on Cancel button click
       cy.get('#result').should('have.text', 'You clicked: Cancel')
    });
+
+23. Handling Navigation with go() command.
+ it contains 2 keywords:
+   back and forward.
+
+"back" is also represented by -1.
+and "forward" is by 1.
+
+
+It moves forward or backward to the next or previous URL in browser history.
+
+The usage is as follows −
+
+//like clicking back button
+cy.go('back')
+//like clicking forward button
+cy.go('forward')
+
+
+
+24. cy.reload() ---> used to refresh the package
+
+25. // viewport to 100px and 500px
+      
+        cy.viewport(1000, 800)
