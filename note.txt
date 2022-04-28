@@ -122,6 +122,9 @@ cy.scrollTo(0, 500)
 you have to write some piece of code.
 (to create an event)
 
+** expect(str).to.equal or expect(str).to.contain
+
+
 1. window:alert (OK button on the alert gets clicked automatically)
 ----------------
  cy.on('window:alert',(str)=>{
