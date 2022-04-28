@@ -5,9 +5,5 @@
 
 # Locating e2e Elements
 
-
-
-
-
 https://user-images.githubusercontent.com/73717776/165353178-3b10da9d-0473-4af4-9f86-da53d3366dc9.mp4
 
