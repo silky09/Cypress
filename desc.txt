@@ -1,0 +1,12 @@
+/// <reference types = 'cypress' />
+
+describe('Test suit', () => {
+
+    it('Test case name', () => {
+
+       cy.visit('')
+       cy.get()
+
+    })
+
+})
