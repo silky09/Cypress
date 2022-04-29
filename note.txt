@@ -181,3 +181,10 @@ cy.go('forward')
 25. // viewport to 100px and 500px
       
         cy.viewport(1000, 800)
+
+26. Hooks:
+
+   1. before : runs/executed once before all tests
+   2. after : runs once all tests are done
+   3. beforeEach : runs before every test block
+   4. afterEach : runs after every test block
