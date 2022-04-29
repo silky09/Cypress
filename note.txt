@@ -188,3 +188,11 @@ cy.go('forward')
    2. after : runs once all tests are done
    3. beforeEach : runs before every test block
    4. afterEach : runs after every test block
+
+27. Fixture : it is a file that contains some data.
+and that particular data, we use in our TCs.
+it is besically a data driven test.
+
+i.e test will be driven by the data.
+data can be in diff format like json, png, video,gif,txt etc.
+
