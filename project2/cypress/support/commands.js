@@ -23,3 +23,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('login', function(email, password) {
+ 
+    cy.visit('https://admin-demo.nopcommerce.com/login')
+    cy.get('#Email').clear()
+    cy.get('#Email').type(email)
+    cy.get('#Password').clear()
+    cy.get('#Password').type(password)
+    cy.get('.button-1').click()
+
+})
