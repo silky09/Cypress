@@ -219,7 +219,7 @@ github is a global reposetory: where we checkin our code.
 
 29. Cypress dashboard service:
    2 imp things for capturing and recording tests
-1. project id
+1. project id  : "projectId": "5mrczb"
 2. record keys
 
 with these two things we can access cypress dashboard service.
