@@ -201,8 +201,8 @@ from test scripts.
 in pom, we create a seperate classes for each and every pages of the application.
 and those classes having locators.
 
-pom is useful in duplication and update.
-
+>> pom is useful in duplication and update.
+>> add variables to replace hard code locators.
 
 features: we can 
 1.reusability (we can reuse the class in multiple TCs)
