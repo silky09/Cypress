@@ -1,8 +1,8 @@
 /// <reference types = 'cypress' />
 
-describe('Test suit', () => {
+describe('Test suit', function() {
 
-    it('Test case name', () => {
+    it('Test case name', function() {
 
        cy.visit('')
        cy.get()
