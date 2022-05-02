@@ -50,8 +50,10 @@ it("name of the test", function(){
 })
 
 8. then run test using : npx cypress open
-or
+  or
 node_modules/.bin/cypress open
+
+"cypress is installed in node_modelules/.bin folder"
 
 9. to terminate the program use: ctrl c
 
@@ -79,8 +81,8 @@ it('Take a Screenshot', () => {
        cy.screenshot()
  })
 
- 15. for running specific file:
-
+ 15. for running specific file: use an argument called --spec
+after that relative path.
  -----> npx cypress run  --spec "cypress/integration/login_Test.js" 
 ------> npx cypress run -- spec "project2/cypress/integration/eCommerce_demoTest.js"    
 (copy relative path of the file)  
@@ -207,3 +209,25 @@ and those classes having locators.
 features: we can POM for 
 1.reusability (we can reuse the class in multiple TCs)
 2. maintainability
+
+
+----------------------
+
+github is a global reposetory: where we checkin our code.
+
+-----------------------
+
+29. Cypress dashboard service:
+   2 imp things for capturing and recording tests
+1. project id
+2. record keys
+
+with these two things we can access cypress dashboard service.
+
+npx cypress run --record --key 02c3ec2d-5f73-4a59-a32b-6f18d548e8e3
+
+30. Cypress integration with Jenkins:
+
+Jenkins is a CI continuos integration tool 
+where we can configure our cypress project and
+run our cypress scripts.
