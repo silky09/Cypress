@@ -196,3 +196,14 @@ it is besically a data driven test.
 i.e test will be driven by the data.
 data can be in diff format like json, png, video,gif,txt etc.
 
+28. POM : it is a design patterns where page objects are seperated 
+from test scripts.
+in pom, we create a seperate classes for each and every pages of the application.
+and those classes having locators.
+
+pom is useful in duplication and update.
+
+
+features: we can 
+1.reusability (we can reuse the class in multiple TCs)
+2. maintainability
