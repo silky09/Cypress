@@ -1,15 +1,16 @@
 export class loginPage{
 
-    // creating variable to less use of hard code
+    // creating variable to replace hard code locators
 
     my_email = '#Email';
     my_password = '#Password';
-    button = '.button-1'
+    button = '.button-1';
+    url = 'https://admin-demo.nopcommerce.com/login'
 
     // perform actions like visit url
     
     VisitUrl(){
-        cy.visit('https://admin-demo.nopcommerce.com/login')
+        cy.visit(this.url)
 
     }
 
