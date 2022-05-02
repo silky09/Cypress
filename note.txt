@@ -204,6 +204,6 @@ and those classes having locators.
 >> pom is useful in duplication and update.
 >> add variables to replace hard code locators.
 
-features: we can 
+features: we can POM for 
 1.reusability (we can reuse the class in multiple TCs)
 2. maintainability
