@@ -34,3 +34,5 @@ Cypress.Commands.add('login', function(email, password) {
     cy.get('.button-1').click()
 
 })
+
+import 'cypress-file-upload';
