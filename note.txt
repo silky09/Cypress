@@ -257,3 +257,16 @@ import 'cypress-file-upload';
    > usage:
    const path = 'img.png' (img should be stored in fixture folder)
    cy.get('').attachFile(path)
+
+32. Download files: check https://www.npmjs.com/package/cypress-downloadfile for clear explanation.
+follow step by step.
+ only add this extra :
+
+ npm install --save -dev cypress-downloadfile
+
+ you can download any type of file like pdf, txt.
+
+ If autocompletion does not work out of the box you can add the following line above your testfile
+
+/// <reference types="cypress-downloadfile"/>
+
