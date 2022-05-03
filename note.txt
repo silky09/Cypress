@@ -260,6 +260,7 @@ import 'cypress-file-upload';
 
 32. Download files: check https://www.npmjs.com/package/cypress-downloadfile for clear explanation.
 follow step by step.
+
  only add this extra :
 
  npm install --save -dev cypress-downloadfile
@@ -270,3 +271,8 @@ follow step by step.
 
 /// <reference types="cypress-downloadfile"/>
 
+// first param => url of the image
+// second param --> folder name
+// third param --> file name
+
+cy.downloadFile('first param','second param', 'third param')
