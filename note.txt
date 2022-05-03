@@ -94,6 +94,11 @@ after that relative path.
  >>>> npx cypress run (to run all the tests under integration folder in headless mode)
 >>>> npx cypress run --headed (with --headed parameters we can see the execution or ui in the browser.)
  
+----------------------------------------
+npx cypress run --headed --config pageLoadTimeout=10000  --spec  "cypress/integration/loginTest.spec.js"
+
+ 
+----------------------------------------
  18. headless means all TCs are executed in the backend.
  so we can not see any UI. 
 
