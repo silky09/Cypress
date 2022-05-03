@@ -35,4 +35,8 @@ Cypress.Commands.add('login', function(email, password) {
 
 })
 
+//import for file-upload
 import 'cypress-file-upload';
+
+//added for downloadfile
+require('cypress-downloadfile/lib/downloadFileCommand')
