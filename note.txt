@@ -236,3 +236,24 @@ npx cypress run --record --key 02c3ec2d-5f73-4a59-a32b-6f18d548e8e3
 Jenkins is a CI continuos integration tool 
 where we can configure our cypress project and
 run our cypress scripts.
+
+31. upload files:
+   >  npm install --save-dev cypress-file-upload
+   > If you are using TypeScript, ensure your tsconfig.json contains commands' types:
+
+"compilerOptions": {
+  "types": ["cypress", "cypress-file-upload"]
+}
+
+   > To be able to use any custom command you need to add it to cypress/support/commands.js like this:
+
+import 'cypress-file-upload';
+
+   > Then, make sure this commands.js is imported in cypress/support/index.js (it might be commented):
+
+// Import commands.js using ES2015 syntax:
+       import './commands';
+
+   > usage:
+   const path = 'img.png' (img should be stored in fixture folder)
+   cy.get('').attachFile(path)
