@@ -276,3 +276,15 @@ follow step by step.
 // third param --> file name
 
 cy.downloadFile('first param','second param', 'third param')
+
+33. REST-API testing---> CRUD methods
+
+> If you make a cy.request() prior to visiting a page, Cypress assumes the host is the baseUrl 
+property configured inside of your configuration(cypress.json) file
+
+{
+"baseUrl": "https://httpbin.org/"
+}
+
+> 
+
