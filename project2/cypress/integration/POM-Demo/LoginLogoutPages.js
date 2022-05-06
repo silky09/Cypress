@@ -15,7 +15,12 @@ describe('POM-demo-test', function() {
         login.EnterPassword('secret_sauce');
         login.ClickLoginButton();
         
-        cy.get('.title').should('contain.text', 'Products')
+        cy.get('.title')
+        .should('contain.text', 'Products')
+        .then((logoName) => {
+
+            cy.log(logoName.text())
+        })
 
     })
 
