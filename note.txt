@@ -129,7 +129,8 @@ cy.scrollTo(0, 500)
 you have to write some piece of code.
 (to create an event)
 
-** expect(str).to.equal or expect(str).to.contain
+** expect(str).to.equal  or 
+   expect(str).to.contain
 
 
 1. window:alert (OK button on the alert gets clicked automatically)
@@ -195,6 +196,18 @@ cy.go('forward')
    2. after : runs once all tests are done
    3. beforeEach : runs before every test block
    4. afterEach : runs after every test block
+
+
+if same URL is placed in many TCs then you can keep 
+that url in hook and use as an alias
+
+ex:
+
+beforeEach(() => {
+   cy.visit('google.com').as('URL')
+})
+
+it runs before every testcases
 
 27. Fixture : it is a file that contains some data.
 and that particular data, we use in our TCs.
@@ -287,4 +300,17 @@ property configured inside of your configuration(cypress.json) file
 }
 
 > 
+
+34. Alias : helps to reduce repetation.
+it allows us to delete the repetation statments.
+
+ex: if same command or selectors are using in multiple place then use alias for time saving.
+like: this line of code are found in many place then use alias 
+cy.get('[name = "copy"]')
+
+Alias:  cy.get('[name = "copy"]').as(copy)
+and then 
+         cy.get('@copy')    (simple and short)
+
+35. instead of using multiple 'should' command use 'and' command.
 
