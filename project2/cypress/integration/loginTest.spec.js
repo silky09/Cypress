@@ -1,6 +1,6 @@
 /// <reference types = 'cypress' />
 
-import {loginPage} from './PageObjects/LoginPage'
+import {loginPage} from '../support/PageObjects/LoginPage'
 
 describe('Login Test', () => {
 
