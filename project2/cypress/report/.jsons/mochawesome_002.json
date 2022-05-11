@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-05-11T07:14:11.215Z",
+    "end": "2022-05-11T07:14:12.515Z",
+    "duration": 1300,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2ce9c451-1565-44bf-a3a0-49d133324274",
+      "title": "",
+      "fullFile": "cypress/integration/DownloadFiles.spec.js",
+      "file": "cypress/integration/DownloadFiles.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "16721bfb-f9d9-4f71-bd41-06156992f1e6",
+          "title": "DownloadFiles",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "DownloadFiles",
+              "fullTitle": "DownloadFiles DownloadFiles",
+              "timedOut": null,
+              "duration": 1262,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// first param => url of the image\n// second param --> folder name\n// third param --> file name\ncy.downloadFile('http://www.africau.edu/images/default/sample.pdf', 'Download', 'demo.pdf');\ncy.downloadFile('https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg', 'MyDownload', 'img.jpg');",
+              "err": {},
+              "uuid": "85f10563-2d9e-44f7-b24a-b5c5f8ef33e3",
+              "parentUUID": "16721bfb-f9d9-4f71-bd41-06156992f1e6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "85f10563-2d9e-44f7-b24a-b5c5f8ef33e3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1262,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/.jsons",
+        "charts": true,
+        "reportPageTitle": "Silky_Project_Report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

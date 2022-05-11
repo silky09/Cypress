@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-05-11T08:14:35.341Z",
+    "end": "2022-05-11T08:14:41.968Z",
+    "duration": 6627,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1c22e220-d68d-420f-a716-bb5ad9e9bb49",
+      "title": "",
+      "fullFile": "cypress/integration/POM-Demo/LoginLogoutPages.js",
+      "file": "cypress/integration/POM-Demo/LoginLogoutPages.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "68a57737-2488-40eb-94e7-7bd1909a5c6b",
+          "title": "POM-demo-test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "LoginTest",
+              "fullTitle": "POM-demo-test LoginTest",
+              "timedOut": null,
+              "duration": 2953,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.VisitURL('https://www.saucedemo.com/');\nlogin.EnterUserName('standard_user');\nlogin.EnterPassword('secret_sauce');\nlogin.ClickLoginButton();\ncy.get('.title').should('contain.text', 'Products') //.should('have.text', 'Products')\n.then(logoName => {\n  cy.log(logoName.text());\n});",
+              "err": {},
+              "uuid": "cb53c887-621c-49a0-add9-8cc772d78a30",
+              "parentUUID": "68a57737-2488-40eb-94e7-7bd1909a5c6b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "LogOut_Test",
+              "fullTitle": "POM-demo-test LogOut_Test",
+              "timedOut": null,
+              "duration": 1024,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "logout.ClickLogout();\ncy.title().should('eq', 'Swag Labs');",
+              "err": {},
+              "uuid": "89c82a45-79bf-402c-a61f-99a7c12763aa",
+              "parentUUID": "68a57737-2488-40eb-94e7-7bd1909a5c6b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cb53c887-621c-49a0-add9-8cc772d78a30",
+            "89c82a45-79bf-402c-a61f-99a7c12763aa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3977,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/.jsons",
+        "charts": true,
+        "reportPageTitle": "Silky_Project_Report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

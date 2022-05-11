@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-05-11T07:12:45.958Z",
+    "end": "2022-05-11T07:13:00.906Z",
+    "duration": 14948,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "22290995-b308-4ce8-bb53-b2f7f02c4fbd",
+      "title": "",
+      "fullFile": "cypress/integration/ HandlingNavigation.ts",
+      "file": "cypress/integration/ HandlingNavigation.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bc7ffcd8-5ef1-4405-8025-cf9cbd82dc3a",
+          "title": " Handling_Navigation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigation tests",
+              "fullTitle": " Handling_Navigation Navigation tests",
+              "timedOut": null,
+              "duration": 10042,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://demo.nopcommerce.com/');\n// Home page\ncy.title().should('eq', 'nopCommerce demo store');\n// Registration page\ncy.get('.ico-register').contains('Register').click();\ncy.title().should('eq', 'nopCommerce demo store. Register');\n// Navigating back to home page\ncy.go('back');\ncy.title().should('eq', 'nopCommerce demo store');\n// Navigating forward to Registration page\ncy.go('forward');\ncy.title().should('eq', 'nopCommerce demo store. Register');\n// Navigating back to home page with back number -1\ncy.go(-1); // back\ncy.title().should('eq', 'nopCommerce demo store');\n// Navigating back to home page with forward number 1\ncy.go(1); // forward\ncy.title().should('eq', 'nopCommerce demo store. Register');\ncy.reload();\n// viewport to 100px and 500px\ncy.viewport(1000, 800);",
+              "err": {},
+              "uuid": "83065b7b-6c44-4815-8345-7dca8868f5f6",
+              "parentUUID": "bc7ffcd8-5ef1-4405-8025-cf9cbd82dc3a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "83065b7b-6c44-4815-8345-7dca8868f5f6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10042,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/.jsons",
+        "charts": true,
+        "reportPageTitle": "Silky_Project_Report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

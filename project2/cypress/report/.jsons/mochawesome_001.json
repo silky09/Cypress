@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-05-11T07:13:18.287Z",
+    "end": "2022-05-11T07:13:55.030Z",
+    "duration": 36743,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "699e9ba0-1dbc-4dc2-bde4-570ec955a906",
+      "title": "",
+      "fullFile": "cypress/integration/CustomCommands.spec.js",
+      "file": "cypress/integration/CustomCommands.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7208ec17-24cd-4ad9-bed8-286dd6ffb6a2",
+          "title": "Custom commands",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login_test with many scenarios",
+              "fullTitle": "Custom commands Login_test with many scenarios",
+              "timedOut": null,
+              "duration": 19491,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Login_test with Valid email and Valid password\ncy.log('Login_test with Valid email and Valid password'); //add custom command \ncy.login('admin@yourstore.com', 'admin');\ncy.title().should('eq', 'Dashboard / nopCommerce administration'); // Login_test with Valid email and invalid password\ncy.log('Login_test with Valid email and inValid password');\ncy.login('admin@yourstore.com', 'admin1');\ncy.title().should('eq', 'Your store. Login');\ncy.get('.message-error').should('contain.text', 'Login was unsuccessful. Please correct the errors and try again.The credentials provided are incorrect'); // Login_test with inValid email and invalid password\ncy.log('Login_test with inValid email and inValid password');\ncy.login('admin@yourstore2.com', 'admin1');\ncy.title().should('eq', 'Your store. Login');\ncy.get('.message-error').should('contain.text', 'Login was unsuccessful. Please correct the errors and try again.No customer account found');",
+              "err": {},
+              "uuid": "85b91321-cb19-4742-ae00-64b028aa2df5",
+              "parentUUID": "7208ec17-24cd-4ad9-bed8-286dd6ffb6a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add new customer",
+              "fullTitle": "Custom commands Add new customer",
+              "timedOut": null,
+              "duration": 4853,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('admin@yourstore.com', 'admin'); //adding customer script\ncy.log('Adding customer.....');",
+              "err": {},
+              "uuid": "6e189162-332c-44b0-ac88-915112eac085",
+              "parentUUID": "7208ec17-24cd-4ad9-bed8-286dd6ffb6a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Edit customer",
+              "fullTitle": "Custom commands Edit customer",
+              "timedOut": null,
+              "duration": 5377,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('admin@yourstore.com', 'admin'); //edit customer script\ncy.log('Adding customer.....');",
+              "err": {},
+              "uuid": "6e7b23a3-9603-49e1-89f9-a8d5ec6c3455",
+              "parentUUID": "7208ec17-24cd-4ad9-bed8-286dd6ffb6a2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "85b91321-cb19-4742-ae00-64b028aa2df5",
+            "6e189162-332c-44b0-ac88-915112eac085",
+            "6e7b23a3-9603-49e1-89f9-a8d5ec6c3455"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 29721,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/.jsons",
+        "charts": true,
+        "reportPageTitle": "Silky_Project_Report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

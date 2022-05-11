@@ -1,7 +1,7 @@
 /// <reference types = 'cypress' />
 
-import {loginPage} from '../PageObjects/LoginPages'
-import {logOut} from '../PageObjects/LogoutPage'
+import {loginPage} from '../../support/PageObjects/LoginPages'
+import {logOut} from '../../support/PageObjects/LogoutPage'
 
 describe('POM-demo-test', function() {
 
@@ -17,6 +17,7 @@ describe('POM-demo-test', function() {
         
         cy.get('.title')
         .should('contain.text', 'Products')
+        //.should('have.text', 'Products')
         .then((logoName) => {
 
             cy.log(logoName.text())

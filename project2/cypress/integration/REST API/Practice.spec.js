@@ -1,5 +1,6 @@
 /// <reference types = 'cypress' />
 
+
 describe('Practice API_testing', () => { 
 
     // create alias request to reuse in many TCs
@@ -34,6 +35,12 @@ describe('Practice API_testing', () => {
         //    .its('headers')
         //    .its('content-length')
         //    .should('contain', 285)
+        
+        // cy.get('@users').then($headers => {
+        //   cy.wrap($headers).should('contain', 'content-length')
+        // })
+
+
     
     });
 

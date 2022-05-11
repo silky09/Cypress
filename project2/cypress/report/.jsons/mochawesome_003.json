@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-05-11T07:17:12.351Z",
+    "end": "2022-05-11T07:17:24.895Z",
+    "duration": 12544,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "170ea978-cd85-4984-8771-ac4c180413ba",
+      "title": "",
+      "fullFile": "cypress/integration/Updated/GlobalVariable.spec.js",
+      "file": "cypress/integration/Updated/GlobalVariable.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0fb70b99-9b78-4266-9d58-5d72430c674a",
+          "title": "Fixture demo test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Valid username and Valid password",
+              "fullTitle": "Fixture demo test Valid username and Valid password",
+              "timedOut": null,
+              "duration": 3258,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('url'));\ncy.get('[data-test=\"username\"]').type(this.data.standardUsername);\ncy.get('[data-test=\"password\"]').type(this.data.systemPassword);\ncy.get('[data-test=\"login-button\"]').click();\ncy.get('.title').should('contain.text', 'Products');",
+              "err": {},
+              "uuid": "b276abea-4005-44a4-968f-cab1532fe58d",
+              "parentUUID": "0fb70b99-9b78-4266-9d58-5d72430c674a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "inValid username and valid password",
+              "fullTitle": "Fixture demo test inValid username and valid password",
+              "timedOut": null,
+              "duration": 1987,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get('[data-test=\"username\"]').type(this.data.dummyUser);\ncy.get('[data-test=\"password\"]').type(this.data.systemPassword);\ncy.get('[data-test=\"login-button\"]').click();\ncy.get('[data-test=\"error\"]').should('contain.text', 'Epic sadface: Username and password do not match any user in this service');",
+              "err": {},
+              "uuid": "9238d41f-79ca-4fa8-a2c3-74ccb60308ca",
+              "parentUUID": "0fb70b99-9b78-4266-9d58-5d72430c674a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Blocked Username and valid Password",
+              "fullTitle": "Fixture demo test Blocked Username and valid Password",
+              "timedOut": null,
+              "duration": 2502,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get('[data-test=\"username\"]').type(this.data.lockedOutUser);\ncy.get('[data-test=\"password\"]').type(this.data.systemPassword);\ncy.get('[data-test=\"login-button\"]').click();\ncy.get('[data-test=\"error\"]').should('contain.text', 'Epic sadface: Sorry, this user has been locked out.');",
+              "err": {},
+              "uuid": "422a164e-1b1b-4012-9aaa-e6c26309d79c",
+              "parentUUID": "0fb70b99-9b78-4266-9d58-5d72430c674a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "inValid username and invalid password",
+              "fullTitle": "Fixture demo test inValid username and invalid password",
+              "timedOut": null,
+              "duration": 1775,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get('[data-test=\"username\"]').type(this.data.dummyUser);\ncy.get('[data-test=\"password\"]').type(this.data.dummyPassword);\ncy.get('[data-test=\"login-button\"]').click();\ncy.get('[data-test=\"error\"]').should('contain.text', 'Epic sadface: Username and password do not match any user in this service');",
+              "err": {},
+              "uuid": "ef2d574b-2c24-4945-b7cd-ece2c7b2505d",
+              "parentUUID": "0fb70b99-9b78-4266-9d58-5d72430c674a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b276abea-4005-44a4-968f-cab1532fe58d",
+            "9238d41f-79ca-4fa8-a2c3-74ccb60308ca",
+            "422a164e-1b1b-4012-9aaa-e6c26309d79c",
+            "ef2d574b-2c24-4945-b7cd-ece2c7b2505d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9522,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/.jsons",
+        "charts": true,
+        "reportPageTitle": "Silky_Project_Report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

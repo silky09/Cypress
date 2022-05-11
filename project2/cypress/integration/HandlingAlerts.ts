@@ -8,9 +8,9 @@ describe('Handling Alerts', () => {
         cy.get('[type="submit"]').click()
 
         // Handeling window:alert
-        //expect(str).to.equal or expect(str).to.contains
+        //expect(str).to.equal or expect(str).to.contains both works
 
-         // event with method 'on'
+         // 'on' is a method that helps to trigger any events.
         cy.on('window:alert',(str) => {
          //assertions
          expect(str).to.contains('Your full name cannot be blank.\nPlease enter your firstname and lastname e.g. Sameer Bhagwat')
