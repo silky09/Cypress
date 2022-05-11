@@ -7,7 +7,8 @@ describe('Custom commands', () => {
       // Login_test with Valid email and Valid password
 
       cy.log('Login_test with Valid email and Valid password')
-       cy.login('admin@yourstore.com', 'admin')
+      //add custom command 
+      cy.login('admin@yourstore.com', 'admin')
 
        cy.title().should('eq', 'Dashboard / nopCommerce administration')
 
