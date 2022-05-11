@@ -6,5 +6,8 @@
         "charts": true,
         "reportPageTitle": "Silky_Project_Report"
       },
-      "projectId": "5mrczb"
+      "projectId": "5mrczb",
+      "env":{
+        "url":"https://www.saucedemo.com/"
+      }
 }
