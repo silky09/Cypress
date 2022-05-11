@@ -301,8 +301,8 @@ property configured inside of your configuration(cypress.json) file
 
 > 
 
-34. Alias : helps to reduce repetation.
-it allows us to delete the repetation statments.
+34. Alias : helps to reduce repetitive testing steps.
+it allows us to delete the repetition statments.
 
 ex: if same command or selectors are using in multiple place then use alias for time saving.
 like: this line of code are found in many place then use alias 
@@ -314,3 +314,46 @@ and then
 
 35. instead of using multiple 'should' command use 'and' command.
 
+
+36. generate report:
+
+>>>1.  npm i --save-dev cypress-mochawesome-reporter
+
+>>>2. Change cypress reporter
+config file (cypress.json by default)
+
+  "reporter": "cypress-mochawesome-reporter",
+  "reporterOptions": {
+    "reportDir": "cypress/report",
+    "charts": true,
+    "reportPageTitle": "custom-title"
+  }
+
+
+>>>3. Add to cypress/support/index.js
+import 'cypress-mochawesome-reporter/register';
+
+>>>4. Add to cypress/plugins/index.js
+module.exports = (on, config) => {
+  require('cypress-mochawesome-reporter/plugin')(on);
+};
+
+>>>npx cypress run
+
+37. Cypress.config('defaultCommandTimeout', 8000)
+
+instead of globally, use this time change to a particular before the test script.
+
+38. Setting global environment using command line
+
+1. npx cypress run --spec  "cypress/integration/Updated/GlobalVariable.spec.js" --env url=https://www.saucedemo.com/ --headed
+
+2. in cypress.json,
+
+"env":{
+        "url":"https://www.saucedemo.com/"
+      }
+
+
+39. always put POM in support folder not in integration folder.
+and update the path as well.
