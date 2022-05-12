@@ -235,9 +235,9 @@ github is a global reposetory: where we checkin our code.
 
 -----------------------
 
-29. Cypress dashboard service:
+29. Cypress dashboard service: will be connect from cypress test runner runs option.
    2 imp things for capturing and recording tests
-1. project id  : "projectId": "5mrczb"
+1. project id  : "projectId": "5mrczb" (automatically add in cypress.json)
 2. record keys
 
 with these two things we can access cypress dashboard service.
@@ -315,7 +315,7 @@ and then
 35. instead of using multiple 'should' command use 'and' command.
 
 
-36. generate report:
+36. generate HTML report:
 
 >>>1.  npm i --save-dev cypress-mochawesome-reporter
 
@@ -357,3 +357,38 @@ instead of globally, use this time change to a particular before the test script
 
 39. always put POM in support folder not in integration folder.
 and update the path as well.
+
+40. Using cypress studio : 
+----------------------
+set in cypress.json,
+
+>>> 1. "experimentalStudio": true,
+>>>2.  "chromeWebSecurity": false
+
+create one new empty file and open test runner and start this file.
+there will be an option displays that is "Create test with Cypress studio".
+just go through this.
+
+
+41. package.json: in script option,
+you can keep your test command as a variable  and use it in the terminal.
+
+ex:
+"scripts": {
+    "test": "node_modules/.bin/cypress run",
+    "headedTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "recordDashBoardTest": "npm run test -- --record --key 02c3ec2d-5f73-4a59-a32b-6f18d548e8e3",
+    "specFile": "npm run test -- --spec "path of the file""
+  },
+
+  in terminal, start your test with:
+  npm run test /headedTest/ chromeTest/ recordDashBoardTest
+
+  >>> if you want to run 2 file together then put those file in a seperate
+  folder and put keep test name in package.json.
+  >> you can put start (*) if you want to run all file.
+>> you can not put 1 extra string within string 
+so put forward slash (\) before second string in the both sides. see below:
+
+  "specFile": "npm run test -- --spec \"cypress/integration/Updated/*\"
