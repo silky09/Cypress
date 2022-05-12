@@ -340,6 +340,10 @@ module.exports = (on, config) => {
 
 >>>npx cypress run
 
+>>>>if report is not displaying in html but showing in json format then
+resolve this problem with putting  "" --reporter mochawesome  "" flag with file name while 
+running in the terminal.
+
 37. Cypress.config('defaultCommandTimeout', 8000)
 
 instead of globally, use this time change to a particular before the test script.
