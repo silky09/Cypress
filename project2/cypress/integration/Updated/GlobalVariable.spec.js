@@ -1,6 +1,6 @@
 /// <reference types = 'cypress' />
 
-describe('Fixture demo test', () => {
+describe('Setting global variable', () => {
 
     beforeEach(function(){
         cy.fixture('example').then(function(data) {
