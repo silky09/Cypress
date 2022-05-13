@@ -346,6 +346,7 @@ running in the terminal.
 
 37. Cypress.config('defaultCommandTimeout', 8000)
 
+
 instead of globally, use this time change to a particular before the test script.
 
 38. Setting global environment using command line
@@ -357,6 +358,9 @@ instead of globally, use this time change to a particular before the test script
 "env":{
         "url":"https://www.saucedemo.com/"
       }
+
+then update file, 
+cy.visit(Cypress.env('url'))
 
 
 39. always put POM in support folder not in integration folder.
@@ -374,7 +378,7 @@ there will be an option displays that is "Create test with Cypress studio".
 just go through this.
 
 
-41. package.json: in script option,
+41. Set script commands in package.json:
 you can keep your test command as a variable  and use it in the terminal.
 
 ex:
@@ -396,3 +400,10 @@ ex:
 so put forward slash (\) before second string in the both sides. see below:
 
   "specFile": "npm run test -- --spec \"cypress/integration/Updated/*\"
+
+
+42. all will be applicable to run command for chrome browser execution:
+
+>> 1. Cypress run -browser chrome
+>> 2. Cypress run -b chrome
+>> 3. Cypress run -b chrome headed
